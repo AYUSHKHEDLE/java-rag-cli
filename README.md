@@ -170,7 +170,7 @@ Expected output ends with `7 passed, 0 failed.`
 3. **`SimilarityMetric`** (interface) → `CosineSimilarity` scores two sparse
    vectors by dot product over vector magnitudes.
 4. **`SearchEngine`** ties the three together: it vectorizes the query and
-   scores it against every cached document vector, using `TopKSelector` — a
+   scores it against every cached document vector, using `TopKSelector`  a
    generic wrapper around `java.util.PriorityQueue`  to keep only the
    top-k results in `O(n log k)` instead of sorting everything.
 5. **`LlmClient`** (interface, optional) → `OllamaClient` / `OpenAiClient`
