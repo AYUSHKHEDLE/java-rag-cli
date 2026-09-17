@@ -171,7 +171,7 @@ Expected output ends with `7 passed, 0 failed.`
    vectors by dot product over vector magnitudes.
 4. **`SearchEngine`** ties the three together: it vectorizes the query and
    scores it against every cached document vector, using `TopKSelector` — a
-   generic wrapper around `java.util.PriorityQueue` — to keep only the
+   generic wrapper around `java.util.PriorityQueue`  to keep only the
    top-k results in `O(n log k)` instead of sorting everything.
 5. **`LlmClient`** (interface, optional) → `OllamaClient` / `OpenAiClient`
    send the retrieved passages plus the question as a prompt over
@@ -198,5 +198,5 @@ Expected output ends with `7 passed, 0 failed.`
 - Only `.txt` and `.md` files are read; a PDF/DOCX-aware `DocumentReader`
   could be added by implementing the same interface.
 - The JSON handling in `llm/JsonUtil.java` is intentionally minimal (it only
-  extracts one flat string field) — sufficient for the Ollama/OpenAI
+  extracts one flat string field) - sufficient for the Ollama/OpenAI
   response shapes used here, not a general JSON parser.
