@@ -1,7 +1,7 @@
 # Project Report: CLI AI Chat & Search Assistant (RAG Pipeline)
 
 > **Note to self before submitting:** Check the exact report format required
-> on the course page — section names/order may need to match a template.
+> on the course page - section names/order may need to match a template.
 > Rewrite the wording below in your own voice and add anything specific to
 > your implementation choices or testing before submitting.
 
@@ -91,7 +91,7 @@ suggested design: `DocumentReader`, `Vectorizer`, `SimilarityMetric`.
 
 ## 5. Implementation Highlights
 
-- Zero third-party dependencies — the entire project builds with `javac`
+- Zero third-party dependencies  the entire project builds with `javac`
   from the standard library alone, satisfying the "runnable from a terminal"
   requirement without any package manager setup.
 - The optional LLM step degrades gracefully: if no `--llm` flag is passed,
@@ -155,5 +155,4 @@ cd java-rag-cli
 
 ## 9. Conclusion
 
-_[Summarize what the project demonstrates and what you learned, in your own
-words.]_
+
