@@ -4,7 +4,7 @@
 A command-line Retrieval-Augmented Generation (RAG) tool written in plain Java
 (no external dependencies). It indexes local text documents, ranks passages
 against a user's query using **TF-IDF + cosine similarity**, and prints the
-most relevant results — fully offline by default. It can optionally forward
+most relevant results fully - offline by default. It can optionally forward
 the retrieved passages to a local [Ollama](https://ollama.com) model or the
 OpenAI API to synthesize a natural-language answer.
 
@@ -15,10 +15,10 @@ OpenAI API to synthesize a natural-language answer.
 - Cosine similarity ranking with a bounded top-k min-heap (`java.util.PriorityQueue`)
   instead of sorting the whole corpus.
 - Interactive command-line query loop.
-- Optional LLM step via `java.net.http.HttpClient` — works with a local Ollama
+- Optional LLM step via `java.net.http.HttpClient` - works with a local Ollama
   server or the OpenAI Chat Completions API. Entirely optional; retrieval
   works with zero network access.
-- Zero external/third-party dependencies — only the JDK standard library.
+- Zero external/third-party dependencies - only the JDK standard library.
 - Includes a small dependency-free test suite.
 
 ## Requirements
@@ -137,7 +137,7 @@ java -cp out com.ragcli.Main --dir data --llm openai --model gpt-4o-mini
 
 If the LLM call fails for any reason (no server running, bad key, no
 network), the tool prints an error and falls back to showing the raw
-retrieved passages — it never crashes the whole session.
+retrieved passages - it never crashes the whole session.
 
 ### 5. Command-line options
 
