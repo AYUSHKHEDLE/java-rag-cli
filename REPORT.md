@@ -134,8 +134,8 @@ screenshots here.]_
 See `README.md` for full setup instructions. Quick start:
 
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
+git clone https://github.com/AYUSHKHEDLE/java-rag-cli.git
+cd java-rag-cli
 ./build.sh
 ./run.sh --dir data --topk 3
 ```
