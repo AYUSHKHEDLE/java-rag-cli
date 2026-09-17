@@ -181,7 +181,7 @@ Expected output ends with `7 passed, 0 failed.`
 
 - All core behavior is expressed through interfaces (`DocumentReader`,
   `Vectorizer`, `SimilarityMetric`, `LlmClient`) so implementations can be
-  swapped — e.g. a database-backed `DocumentReader`, or an embeddings-based
+  swapped  e.g. a database-backed `DocumentReader`, or an embeddings-based
   `Vectorizer`, without touching `SearchEngine` or `Main`.
 - No external libraries are used anywhere, including for the HTTP calls and
   the (minimal, hand-written) JSON field extraction in `llm/JsonUtil.java`.
