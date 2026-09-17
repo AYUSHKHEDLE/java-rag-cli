@@ -1,0 +1,18 @@
+Lecture Notes: Collections and Generics
+
+Java's Collections Framework provides interfaces like List, Set, Map, and
+Queue, along with implementations such as ArrayList, HashSet, HashMap, and
+PriorityQueue. Generics let these collections be type-safe at compile time,
+so a List<Double> can only hold Double values, catching type errors before
+the program runs instead of at runtime.
+
+PriorityQueue is especially useful for top-k problems: instead of sorting
+an entire dataset, you maintain a bounded heap of size k and only replace
+the worst element when a better candidate arrives. This turns an O(n log n)
+sort into an O(n log k) scan, which matters a lot when k is small and n is
+large, such as retrieving the top 3 most relevant documents out of
+thousands.
+
+Sparse vector representations, implemented here as Map<String, Double>,
+avoid wasting memory on the many zero-weight terms that a dense array
+would require for a large vocabulary.

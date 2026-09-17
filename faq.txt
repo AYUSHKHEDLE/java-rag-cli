@@ -1,0 +1,24 @@
+Frequently Asked Questions
+
+Q: What Java version should I use?
+A: Java 17 or later is recommended, since the project uses modern language
+features such as records, switch expressions, and text blocks.
+
+Q: Can I use external libraries?
+A: The reference implementation avoids external dependencies so it can be
+compiled and run with a plain JDK install, but you may add libraries such
+as Jackson or Gson if your build tool manages them for you.
+
+Q: How do I run the project without a GUI?
+A: Everything is driven from a terminal prompt. Compile the sources with
+javac, then run the Main class with java, passing command line flags such
+as --dir and --topk to control behavior.
+
+Q: What if I don't have an LLM API key?
+A: The retrieval pipeline works completely offline using TF-IDF and cosine
+similarity. The LLM call is optional and only used to generate a natural
+language answer from the retrieved passages.
+
+Q: Where do I put my documents?
+A: Place plain text or markdown files inside the data directory, or point
+the --dir flag at any other folder containing .txt or .md files.

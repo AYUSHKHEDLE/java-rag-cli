@@ -1,0 +1,18 @@
+Programming in Java - Course Syllabus
+
+This course covers core Java programming concepts including object-oriented
+design, collections and generics, exception handling, file I/O, streams,
+and basic networking with the java.net.http.HttpClient API.
+
+Grading breakdown: assignments 40 percent, midterm exam 20 percent, final
+project 30 percent, class participation 10 percent.
+
+The final project must be submitted as a public GitHub repository containing
+a README with setup instructions and a written project report. The project
+must be runnable entirely from the command line without a graphical
+interface.
+
+Office hours are held every Tuesday and Thursday from 3 PM to 5 PM. Students
+are encouraged to start the final project early, since it accounts for a
+significant portion of the grade and requires an automated plagiarism and
+AI-content check before evaluation.
