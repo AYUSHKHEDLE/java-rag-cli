@@ -140,13 +140,9 @@ cd java-rag-cli
 ./run.sh --dir data --topk 3
 ```
 
-## 8. Challenges Faced
 
-_[Fill in with your own experience, e.g. tuning the IDF smoothing formula,
-deciding on a stop-word list, designing the LLM prompt, handling
-inconsistent response JSON shapes between Ollama and OpenAI, etc.]_
 
-## 9. Possible Future Improvements
+## 8. Possible Future Improvements
 
 - Replace/augment TF-IDF with dense embeddings (e.g. call an embeddings
   API) behind the existing `Vectorizer` interface for semantic (not just
@@ -157,7 +153,7 @@ inconsistent response JSON shapes between Ollama and OpenAI, etc.]_
 - Add conversational memory so follow-up queries can reference earlier
   turns.
 
-## 10. Conclusion
+## 9. Conclusion
 
 _[Summarize what the project demonstrates and what you learned, in your own
 words.]_
