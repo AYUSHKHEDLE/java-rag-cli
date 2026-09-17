@@ -7,10 +7,9 @@
 
 **Course:** Programming in Java
 **Project Title:** CLI AI Chat & Search Assistant (RAG Pipeline)
-**Student Name:** _[fill in]_
-**Enrollment / Roll No.:** _[fill in]_
-**GitHub Repository:** _[fill in final public repo URL]_
-**Date:** _[fill in]_
+**Student Name:** Ayush khedle
+**Registration no.:** 25BAI10195 
+**GitHub Repository:** https://github.com/AYUSHKHEDLE/java-rag-cli
 
 ---
 
@@ -124,10 +123,6 @@ Test cases covered:
 7. A query containing an out-of-vocabulary term doesn't crash and still
    matches on the terms it does recognize.
 
-Manual testing was also done by running the CLI interactively against the
-sample `data/` corpus with a range of queries and confirming the ranked
-snippets matched expectations. _[Add your own additional manual test notes /
-screenshots here.]_
 
 ## 7. How to Run
 
@@ -154,5 +149,6 @@ cd java-rag-cli
   turns.
 
 ## 9. Conclusion
+- A command-line Retrieval-Augmented Generation (RAG) assistant built in pure Java without external dependencies. It indexes local text files, retrieves top-matching passages using custom TF-IDF vectorization and cosine similarity via a priority queue, and can optionally synthesize answers using local Ollama or OpenAI models.
 
 
